@@ -10,6 +10,7 @@
     <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj" />
     <ProjectReference Include="..\IAAC\IAAC.csproj" />
     <ProjectReference Include="..\ParallelProgramming\ParallelProgramming.csproj" />
+    <ProjectReference Include="..\SOLID\SOLID.csproj" />
   </ItemGroup>
 
 </Project>

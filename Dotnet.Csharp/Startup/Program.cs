@@ -12,9 +12,10 @@ namespace Startup
         {
             //TestDelegates();
             //TestDesignPatterns();
-            TestIAAC();
+            //TestIAAC();
             //TestParallelProgramming();
-            
+            TestSOLID();
+
             Console.WriteLine("Press any key to exit.");
             Console.ReadLine();
         }
@@ -49,16 +50,23 @@ namespace Startup
 
         static void TestDelegates()
         {
-            DelegatesTest delTest = new DelegatesTest();
-            delTest.TestFunctions();
-            delTest.TestActions();
-            delTest.TestPredicates();
+            DelegatesTest objDelegatesTest = new DelegatesTest();
+            objDelegatesTest.TestFunctions();
+            objDelegatesTest.TestActions();
+            objDelegatesTest.TestPredicates();
         }
 
         static void TestIAAC()
         {
-            IAACTest delTest = new IAACTest();
-            delTest.Run();
+            IAACTest objIAACTest = new IAACTest();
+            objIAACTest.Run();
+
+        }
+
+        static void TestSOLID()
+        {
+            SOLIDTest objSOLIDTest = new SOLIDTest();
+            objSOLIDTest.Run();
 
         }
 
