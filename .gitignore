@@ -1,6 +1,7 @@
 #.gitignore
 
 #Exclude Folders
+/Dotnet.Csharp/.vs
 /Dotnet.Csharp/DesignPatterns/bin
 /Dotnet.Csharp/DesignPatterns/obj
 /Dotnet.Csharp/ParallelProgramming/bin
