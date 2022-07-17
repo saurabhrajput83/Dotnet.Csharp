@@ -1,0 +1,9 @@
+#.gitignore
+
+#Exclude Folders
+/Dotnet.Csharp/DesignPatterns/bin
+/Dotnet.Csharp/DesignPatterns/obj
+/Dotnet.Csharp/ParallelProgramming/bin
+/Dotnet.Csharp/ParallelProgramming/obj
+/Dotnet.Csharp/Startup/bin
+/Dotnet.Csharp/Startup/obj

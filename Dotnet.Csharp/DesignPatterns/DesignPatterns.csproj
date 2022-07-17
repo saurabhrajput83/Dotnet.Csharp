@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Creational\**" />
+    <EmbeddedResource Remove="Creational\**" />
+    <None Remove="Creational\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="CreationalPatterns\FactoryMethod.cs~RF736581.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BehaviouralPatterns\" />
+    <Folder Include="StructuralPatterns\" />
+  </ItemGroup>
+
+</Project>
