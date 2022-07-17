@@ -10,13 +10,26 @@ namespace Startup
 
         static void Main(string[] args)
         {
-            //DesignPatternsTest dpTest = new DesignPatternsTest();
-            //dpTest.TestAbstractFactory();
-            //dpTest.TestBuilder();
-            //dpTest.TestFactoryMethod();
-            //dpTest.TestSingleton();
+            //TestDesignPatterns();
+            //TestParallelProgramming();
+            TestDelegates();
 
-            ParallelProgrammingTest ppTest = new ParallelProgrammingTest();
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadLine();
+        }
+
+        static void TestDesignPatterns()
+        {
+            DesignPatternsTest dpTest = new DesignPatternsTest();
+
+            dpTest.TestAbstractFactory();
+            dpTest.TestBuilder();
+            dpTest.TestFactoryMethod();
+            dpTest.TestSingleton();
+        }
+
+        static void TestParallelProgramming()
+        {
             Action<List<string>> performAction = (list) =>
             {
                 foreach (var item in list)
@@ -24,23 +37,21 @@ namespace Startup
                     Console.WriteLine("perform Action: " + item);
                 }
             };
+            ParallelProgrammingTest ppTest = new ParallelProgrammingTest();
 
-            DateTime dtStart = DateTime.Now;
-
-            ppTest.TestSomeClassMethodsSynchronously();
-            ppTest.TestSomeClassMethodsInThreads();
+            //ppTest.TestSomeClassMethodsSynchronously();
+            //ppTest.TestSomeClassMethodsInThreads();
             ppTest.TestSomeClassMethodsAsynchronously();
             ppTest.TestSomeClassMethodsAsynchronously(performAction);
 
-            DateTime dtEnd = DateTime.Now;
-            //Console.WriteLine(string.Format("Result: {0}", result));
-            Console.WriteLine(string.Format("Time Taken: {0}", dtEnd - dtStart));
-            //Process();
-            //ProcessAsync();
-            //await ProcessAsyncTask();
+        }
 
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadLine();
+        static void TestDelegates()
+        {
+            DelegatesTest delTest = new DelegatesTest();
+            delTest.TestFunctions();
+            delTest.TestActions();
+            delTest.TestPredicates();
         }
 
         static void Process()

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Delegates\Delegates.csproj" />
     <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj" />
     <ProjectReference Include="..\ParallelProgramming\ParallelProgramming.csproj" />
   </ItemGroup>
