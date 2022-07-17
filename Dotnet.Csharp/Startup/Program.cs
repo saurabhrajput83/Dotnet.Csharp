@@ -10,10 +10,11 @@ namespace Startup
 
         static void Main(string[] args)
         {
+            //TestDelegates();
             //TestDesignPatterns();
+            TestIAAC();
             //TestParallelProgramming();
-            TestDelegates();
-
+            
             Console.WriteLine("Press any key to exit.");
             Console.ReadLine();
         }
@@ -52,6 +53,13 @@ namespace Startup
             delTest.TestFunctions();
             delTest.TestActions();
             delTest.TestPredicates();
+        }
+
+        static void TestIAAC()
+        {
+            IAACTest delTest = new IAACTest();
+            delTest.Run();
+
         }
 
         static void Process()

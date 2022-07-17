@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Startup", "Startup\Startup.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{2E417423-8808-4934-A798-0770CF57211B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAAC", "IAAC\IAAC.csproj", "{F339BDAE-6502-415A-BF0B-CDAABB351580}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2E417423-8808-4934-A798-0770CF57211B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E417423-8808-4934-A798-0770CF57211B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E417423-8808-4934-A798-0770CF57211B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F339BDAE-6502-415A-BF0B-CDAABB351580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F339BDAE-6502-415A-BF0B-CDAABB351580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F339BDAE-6502-415A-BF0B-CDAABB351580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F339BDAE-6502-415A-BF0B-CDAABB351580}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
