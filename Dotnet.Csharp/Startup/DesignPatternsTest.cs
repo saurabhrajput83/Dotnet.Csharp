@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.CreationalPatterns;
+using DesignPatterns.StructuralPatterns;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -82,7 +83,7 @@ namespace Startup
 
         public void TestSingleton()
         {
-            Console.WriteLine("====Singleton Starts====");
+            Console.WriteLine("====TestSingleton Starts====");
 
             Singleton s1 = Singleton.GetInstance();
             Singleton s2 = Singleton.GetInstance();
@@ -90,7 +91,30 @@ namespace Startup
             Console.WriteLine(string.Format("s2=>name:{0},guid:{1}", s2.Name, s2.Guid));
             Console.WriteLine(string.Format("s2=>name:{0},guid:{1}", s2.Name, s2.Guid));
 
-            Console.WriteLine("====Singleton Ends====\n");
+            Console.WriteLine("====TestSingleton Ends====\n");
+
+        }
+
+        public void TestBridge()
+        {
+            Console.WriteLine("====TestBridge Starts====");
+
+            DataObject customersData = new CustomersData();
+            CustomersBase customers = new Customers();
+
+
+            customersData.Add("Danny");
+            customersData.Add("Henry");
+            customersData.Add("Joe");
+            customersData.Add("John");
+            customersData.Remove("Henry");
+            customersData.Update("John", "JohnV2");
+
+            customers.DataObject = customersData;
+
+            customers.ShowAll();
+
+            Console.WriteLine("====TestBridge Ends====\n");
 
         }
     }

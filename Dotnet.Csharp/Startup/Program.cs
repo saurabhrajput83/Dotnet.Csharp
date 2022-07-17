@@ -11,10 +11,10 @@ namespace Startup
         static void Main(string[] args)
         {
             //TestDelegates();
-            //TestDesignPatterns();
+            TestDesignPatterns();
             //TestIAAC();
             //TestParallelProgramming();
-            TestSOLID();
+            //TestSOLID();
 
             Console.WriteLine("Press any key to exit.");
             Console.ReadLine();
@@ -24,10 +24,11 @@ namespace Startup
         {
             DesignPatternsTest dpTest = new DesignPatternsTest();
 
-            dpTest.TestAbstractFactory();
-            dpTest.TestBuilder();
-            dpTest.TestFactoryMethod();
-            dpTest.TestSingleton();
+            //dpTest.TestAbstractFactory();
+            //dpTest.TestBuilder();
+            //dpTest.TestFactoryMethod();
+            //dpTest.TestSingleton();
+            dpTest.TestBridge();
         }
 
         static void TestParallelProgramming()
